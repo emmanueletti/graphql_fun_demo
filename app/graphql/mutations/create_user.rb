@@ -13,6 +13,7 @@ module Mutations
     # https://stackoverflow.com/questions/67918836/what-does-colon-after-a-parameter-in-ruby-mean
     # tldr: colon in front makes it so that the arguments order doesnt matter
     def resolve(name:, email:)
+      # activeRecord action
       user = User.new(email: email, name: name) # case in point here, order of it being passed in does not matter
       if user.save
         # return a hash
