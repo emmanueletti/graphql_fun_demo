@@ -1,7 +1,10 @@
 class GraphqlFunDemoSchema < GraphQL::Schema
-  # schema returns all the types and mutations we've defined
+  # schema returns the queryType and mutationType from the Types module namespace
+  # which seems to get opened and added to by each file in the types folder
   mutation(Types::MutationType)
   query(Types::QueryType)
+
+  # no idea what anything beyond this point does...
 
   # For batch-loading (see https://graphql-ruby.org/dataloader/overview.html)
   use GraphQL::Dataloader

@@ -1,4 +1,3 @@
-# All of this gets passed to the graphql_fund_demo_schema.rb file
 module Types
   class QueryType < Types::BaseObject
     # Add `node(id: ID!) and `nodes(ids: [ID!]!)`

@@ -18,4 +18,8 @@ Rails.application.routes.draw do
   # https://guides.rubyonrails.org/autoloading_and_reloading_constants.html
   # just like in the JS implementation of graphQL, the runtime and base configurations
   # are imported from the gem library
+
+  # graphql-rails gem seems to make use of alot of rails conventions, in naming, location inference,
+  # folder structure, etc in its implementation of graphql
+  # would be interesting to see if the graphql-ruby gem is similiar
 end
